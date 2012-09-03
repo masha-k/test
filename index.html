@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="css/main.css">
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css"/>
+		<link rel="stylesheet" type="text/css" href="css/print.css" title="printview" disabled="disabled"/>
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+		<!--[if !IE 7]>
+			<style type="text/css">
+				.container {display:table;height:100%}
+			</style>
+		<![endif]-->
+		<script>
+			$(function() {
+			$( "#tabs" ).tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
+			});
+			function setPrintCSS(isPrint) {
+        		if (document.getElementsByTagName)
+           	 		x = document.getElementsByTagName('link');
+        		else if (document.all)
+            		x = document.all.tags('link');
+        		else {
+            		alert('Простите, этот скрипт не работает в вашем браузере. \nВы можете распечатать страницу с помощью меню браузера.');
+            		return;
+        			}
+        		for (var i = 0; i < x.length; i++){
+            		if (x[i].title == 'printview')
+                		x[i].disabled = !isPrint;
+        			}
+        			
+        		window.scrollTo(0, 0);
+        		if (isPrint){
+            		//setTimeout("window.print()", 100);
+        			}
+    			}
+    
+    		if (document.location.hash == '#print')
+        	setPrintCSS(true);
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<div class="header">
+					<h1>Эгегей!</h1>
+				</div>
+				<div id="tabs">
+					<ul class="menu">
+						<li class="menu_item"><a href="#tabs-1">Главная</a></li>
+						<li class="menu_item"><a href="#tabs-2">Основные вопросы</a></li>
+						<li class="menu_item"><a href="#tabs-3">Опыт разработки</a></li>
+					</ul>	
+					<div class="content main_page" id="tabs-1">
+						<h1>А вот и Маша :)</h1>
+						<img class="photo" src="http://a4.sphotos.ak.fbcdn.net/hphotos-ak-ash3/549665_3839071128497_617001918_n.jpg" alt="Манюня">
+						<img class="print-photo" src="http://img.leprosorium.com/1552295" alt="">
+					</div>
+					<div class="content common_questions_page" id="tabs-2">
+						<h2>Общие вопросы</h2>
+						<table class="content_table common_questions">
+							<tr>
+								<td>Фамилия, имя, отчество</td>
+								<td>Кизерова Мария Алексеевна</td>
+							</tr>
+							<tr>
+								<td>E-mail</td>
+								<td>kizerova@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Телефон</td>
+								<td>+7(909)904-70-80</td>
+							</tr>
+							<tr>
+								<td>Год рождения</td>
+								<td>1987</td>
+							</tr>
+							<tr>
+								<td>Город, в котором живу</td>
+								<td>Москва</td>
+							</tr>
+							<tr>
+								<td>ВУЗ, факультет, кафедра, специальность</td>
+								<td>Международный университет природы, общества и чеовека "Дубна", факультет социологии, кафедра социологии, специальность социолог</td>
+							</tr>
+							<tr>
+								<td>Год окончания ВУЗа</td>
+								<td>2008</td>
+							</tr>
+							<tr>
+								<td>Уровень владения английским языком</td>
+								<td>Upper-intermediate</td>
+							</tr>
+							<tr>
+								<td>Чего я ожидаю от участия в Школе</td>
+								<td>Повышения своего профессионального уровня и, возможно, получения новой работы ;)</td>
+							</tr>
+							<tr>
+								<td>Откуда я узнала про Школу</td>
+								<td>Из твиттера.</td>
+							</tr>
+							<tr>
+								<td>Сколько времени я могу уделять стажировке или работе в Яндексе</td>
+								<td>Я недавно ушла из Games Mail.Ru и у меня много свободного времени.</td>
+							</tr>
+						</table>
+					</div>
+					<div class="content experience_page" id="tabs-3">
+						<h2>Опыт разработки</h2>
+						<table class="content_table experience">
+							<tr>
+								<td class="experience_question">Расскажите нам о вашем опыте разработки. Ничего не упускайте: это может быть как серьезный интерфейс, так и просто домашняя страничка.
+								</td>
+								<td>
+									Я начала заниматься версткой в 2010 году, сначала для себя, а потом как фрилансер для компании Интерэктив сервисез. Сделала для них несколько сайтов под акции разных брендов. Вот здесь на <a href="http://kizerova.ru/web.html">моей страничке</a> можно посмотреть (к сожалению, сейчас те акции уже давно закончились, да и сам этот сайт давно не обновлялся, <span class="small_txt">а пора бы</span>). Потом в апреле 2011 года я устроилась на работу в Games Mail.Ru  в бывшую игровую студию IT Territory. Там я занималась поддержкой сайтов браузерных игр (<a href="http://3k.mail.ru/">Троецарствие</a>, <a href="http://jugger.mail.ru/">Джаггернаут</a>, <a href="http://dwar.mail.ru/">Легенда: Наследие драконов</a>, Территория <a href="http://territory.mail.ru/">1</a> и <a href="http://t2.mail.ru/">2</a>, <a href="http://www.terrafoot.ru/">Территория футбола</a> и т.д.), в поддержку входило добавление нового функционала (например изменение страницы регистрации, добавление новых рекламных страниц и тому подобное). Также с нуля верстала портал для <a href="http://minigames.mail.ru">Миниигр</a>, некоторые штуки для игр в социальных сетях, для одной игры про панду и лося делала отдельный <a href="http://pandamobile.mail.ru/">сайт</a>. Сверстала огромное количество почтовых рассылок. С javascript дел имела мало, разве что ближе к концу писала несложные скриптики. В середине июля этого года ходила на курсы JavaScript 1 lvl от центра Специалист. Если не поступлю к вам, пойду на второй уровень :)				
+									</td>
+							</tr>
+							<tr>
+								<td>Какие языки программирования, фреймворки и технологии вы использовали? Сложились ли у вас личные предпочтения?
+								</td>
+								<td>
+									Немного javascript на проектах, где не использовался jquery. Личных предпочтений не сложилось. 
+								</td>
+							</tr>
+							<tr>
+								<td>Какие редакторы и среды разработки вы использовали? Чем обычно пользуетесь?
+								</td>
+								<td>
+									На маке обычно пользуюсь Coda, на виндоус NetBeans (в принципе, на маке NetBeans тоже есть, но как-то так сложилось, что юзаю коду).
+								</td>
+							</tr>
+							<tr>
+								<td>С какими ОС приходилось сталкиваться? Для каких целей вы их использовали?
+								</td>
+								<td>Дома пользуюсь MacOS, на бывшей работе был Windows.</td>
+							</tr>
+							<tr>
+								<td>Приходилось ли вам пользоваться системами контроля версий? Если да, то какими? Какая из них вам нравится больше всего?
+								</td>
+								<td>Да, на работе в Games Mail.Ru пользовалась SVN. Также некоторые очень старые проекты были на CVS, но сталкивалась с этой системой контроля версий всего пару тройку раз за почти полтора года работы. SVN нравится больше :)</td>
+							</tr>
+							<tr>
+								<td>Использовали ли вы системы постановки и ведения задач?
+								</td>
+								<td>Да, у нас в  IT Territory был свой таск трекер. В других отделах, насколько я знаю, была Jira, но мы пользовались системой собственной разработки.</td>
+							</tr>
+							<tr>
+								<td>Какие полезные для фронтенд-разработчика ресурсы вы используете и можете посоветовать?
+								</td>
+								<td><a href="http://habrahabr.ru/">Хабр</a> и ссылки с него :), иногда посматриваю <a href="http://css-tricks.com/">css-tricks.com</a>, <a href="http://stackoverflow.com/">stackoverflow.com</a>, блог <a href="http://chikuyonok.ru/">чикуенка</a>, и другие ресурсы, которые выдает поиск на мои насущные запросы. </td>
+							</tr>
+							<tr>
+								<td>Работали ли вы где-нибудь? Какие у вас были должностные обязанности? Есть ли опыт работы в команде?
+								</td>
+								<td>Да, работала в Games Mail.Ru с апреля 2011 по август 2012. В бывшей студии IT Territory. Занималась версткой новых порталов, страничек, рассылок, новых блоков, которые необходимо было впихнуть в существующий дизайн. Правкой и поддержкой существующей верстки.</td>
+							</tr>
+						</table>
+					</div>
+					<a class="back_to_normality" href="#" onclick="setPrintCSS(false); return false;">Вернуться к обычной версии.</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="links">
+				<a href="#print" onclick="setPrintCSS(true); return false;" class="toprint" title="Распечатать">версия для печати</a>
+			</div>
+			<div class="copyright">копирайт © 2012 копирайтович</div>
+		</div>
+	</body>
+</html>

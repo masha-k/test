@@ -1,0 +1,54 @@
+* {padding: 0; margin: 0;}
+html, body {height: 100%;}
+
+.container {min-height: 100%; font-family: Georgia, Times, serif; font-size: 100%; width: 100%;}
+
+.wrapper {overflow:auto; width: 100%; padding-bottom: 50px;}
+.content {padding: 10px;}
+
+.header {background-color: #ff0033; color:#fff; padding: 10px; text-align: center;}
+.header h1 {text-shadow: 2px 2px 3px #000;}
+
+.footer {position: relative;margin-top: -50px;height: 50px;clear:both; background: #ff0033; color:#fff;} 
+.copyright {font-size: 10px; position: absolute; bottom: 10px; right: 10px;}
+
+/*Opera Fix*/
+body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;}
+
+.wrapper {width: 100%;}
+
+.menu {}
+.menu_item {}
+.menu_item a {color:#fff;}
+
+
+.main_page {text-align: center;}
+.print-photo {display: none;}
+
+.content_table {width: 100%;}
+.content_table td {border-bottom: 1px dashed #ccc; height: 30px;padding: 5px;}
+.experience_question {width: 30%;}
+.small_txt {font-size: 50%;}
+
+.links {float: left; position: relative; margin: 10px 0 0 10px;}
+.links a {color:#fff;}
+.back_to_normality {margin: 0 auto; text-align: center; display: none;}
+
+#tabs {background: transparent;border: none; font-family: Helvetica, Tahoma, sans-serif;}
+#tabs .ui-widget-header {
+	background: transparent;
+	border: none;
+	border-bottom: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+#tabs .ui-state-default {display: inline-block; background: #ff0033; border-radius: 6px; color:#fff; width: 200px; height: 25px; text-align: center; margin: 0 10px 0 0;}
+#tabs .ui-state-active {background:#ff0033;border: none;}
+#tabs .ui-state-default a {color:#fff;}
+#tabs .ui-state-active a {color:#fff5ee;}
+#tabs .ui-tabs-nav li {float: none; border: none;padding: 0; line-height: 28px;}
+#tabs .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {font-weight: normal; border: none; color: #fff;}
+#tabs .ui-tabs-nav li a {float: none; padding: 0; text-decoration: underline;}
+#tabs .ui-tabs-nav {display: table; list-style-type: none; padding: 10px; margin: 0 auto;}
+.ui-widget-content a:hover {color:#de3163;}

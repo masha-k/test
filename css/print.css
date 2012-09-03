@@ -1,0 +1,7 @@
+.header, .footer, #tabs .ui-tabs-nav {display: none;}
+#tab-1, #tab-2, #tab-3 {display: block;}
+.ui-tabs .ui-tabs-hide {display: block !important;}
+.container {font-size: 9pt;}
+.photo {display: none;}
+.print-photo {display: block; margin: 0 auto;}
+.back_to_normality {display: block;}
